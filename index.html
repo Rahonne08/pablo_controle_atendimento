@@ -1,11 +1,230 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Controle de Dados - Futurista</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    sdfsdfsdf
+    <div class="container">
+        <h1>Controle de Dados - Atendente Pablo</h1>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Conta Contrato</th>
+                    <th>Assunto</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody id="data-table-body">
+                <tr>
+                    <td>1</td>
+                    <td>8358788</td>
+                    <td>vem todo dia</td>
+                    <td class="status resolved">Resolvido</td>
+                    <td>2024-03-20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3006764273</td>
+                    <td>sogra</td>
+                    <td class="status in-progress">Em Andamento</td>
+                    <td>2024-03-21</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3002110724</td>
+                    <td>Magda</td>
+                    <td class="status pending">Pendente</td>
+                    <td>2024-03-22</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>04162143390</td>
+                    <td>Pablo</td>
+                    <td class="status pending">Pendente</td>
+                    <td>2024-03-22</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>42666106</td>
+                    <td>CUNHADA DO JACKSON</td>
+                    <td class="status in-progress">Em Andamento</td>
+                    <td>2024-12-26</td>
+                </tr>
+               <tr>
+                    <td>6</td>
+                    <td>3021434301</td>
+                    <td>ligação nova - agua (aceite)</td>
+                     <td class="status pending">Pendente</td>
+                    <td>2024-12-27</td>
+                </tr>
+                   <tr>
+                    <td>7</td>
+                    <td>8344477</td>
+                    <td>solicitar mudança do medidor de local</td>
+                     <td class="status in-progress">Em Andamento</td>
+                    <td>2025-01-02</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>3021531625</td>
+                    <td>NIVEL DE TENSÃO	</td>
+                     <td class="status in-progress">Em Andamento</td>
+                    <td>2025-01-06</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Adicionar Novo Atendimento</h2>
+        <form id="add-form">
+            <input type="text" id="contract" placeholder="Conta contrato" required>
+            <input type="text" id="subject" placeholder="Assunto" required>
+            <select id="status">
+                <option value="pending">Pendente</option>
+                <option value="in-progress">Em Andamento</option>
+                <option value="resolved">Resolvido</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">Adicionar Atendimento</button>
+        </form>
+    </div>
+    <h1>Controle de Dados - NIS CADASTRADO</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Conta Contrato</th>
+                    <th>CPF</th>
+                    <th>Data de Nascimento</th>
+                    <th>Data de cadastro</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-atendimentos">
+                <!-- Linhas de dados serão adicionadas aqui dinamicamente -->
+                <tr>
+                    <td>1</td>
+                    <td>8371377</td>
+                    <td>01529885302</td>
+                    <td>08.11.1985</td>
+                    <td>31.12.2024</td>
+                    <td class="status resolved">Resolvido</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3021788472</td>
+                    <td>02775852360</td>
+                    <td>30.06.1987</td>
+                    <td>08.01.2025</td>
+                    <td class="status resolved">Resolvido</td>
+                </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3022339310</td>
+                    <td>97059161287</td>
+                    <td>16.12.1987</td>
+                    <td>03.01.2025</td>
+                    <td class="status resolved">Resolvido</td>
+                </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>13844267</td>
+                    <td>00859748383</td>
+                    <td>13.05.1971</td>
+                    <td>03.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>44814269</td>
+                    <td>02814866389</td>
+                    <td>17.05.1992</td>
+                    <td>09.01.2025</td>
+                   <td class="status resolved">Resolvido</td>
+                </tr>
+               <tr>
+                    <td>6</td>
+                    <td>3004359959</td>
+                    <td>02890360385</td>
+                    <td>20.09.1989</td>
+                    <td>17.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8258309</td>
+                    <td>87876779387</td>
+                    <td>12.04.1978</td>
+                    <td>17.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>45151913 (ANTIGA)</td>
+                    <td>08135599366</td>
+                    <td>29.11.2001</td>
+                    <td>21.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                 <td>9</td>
+                    <td>8368015</td>
+                    <td>96639377349</td>
+                    <td>12.01.1967</td>
+                    <td>22.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                <td>10</td>
+                    <td>42757225</td>
+                    <td>62673290389</td>
+                    <td>07.01.2004</td>
+                    <td>16.01.2025</td>
+                   <td class="status resolved">Resolvido</td>
+                </tr>
+                 <td>11</td>
+                    <td>3022031197</td>
+                    <td>0461802388</td>
+                    <td>27.02.1989</td>
+                    <td>27.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                 <td>12</td>
+                    <td>3022435301</td>
+                    <td>08135599366</td>
+                    <td>29.11.2001</td>
+                    <td>22.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+                 <td>13</td>
+                    <td>3021836264</td>
+                    <td>05631506378</td>
+                    <td>25.09.1994</td>
+                    <td>28.01.2025</td>
+                   <td class="status in-progress">Em Andamento</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-container">
+            <h2>Adicionar Novo Atendimento</h2>
+            <input type="text" id="conta-contrato" placeholder="Conta Contrato" required>
+            <input type="text" id="cpf" placeholder="CPF" required>
+            <input type="date" id="data-nascimento" placeholder="Data de Nascimento" required>
+            <input type="date" id="data-verificacao" placeholder="Data para Verificação" required>
+            <select id="status">
+                <option value="Resolvido">Resolvido</option>
+                <option value="Em Andamento">Em Andamento</option>
+                <option value="Pendente">Pendente</option>
+            </select>
+            <button onclick="adicionarAtendimento()">Adicionar Atendimento</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
